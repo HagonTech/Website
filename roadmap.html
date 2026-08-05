@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Roadmap — hagon</title>
-<style>
-:root{--bg:#f4f1ea;--text:#171717;--muted:#6b6b66;--line:rgba(23,23,23,.18);--max:1180px}
-body{margin:0;background:linear-gradient(#f7f4ed,var(--bg));color:var(--text);font-family:Inter,system-ui,sans-serif}
-.page{padding:24px}
-.wrap{width:min(var(--max),100%);margin:auto}
-.top{display:flex;justify-content:space-between;align-items:center;padding:8px 0 24px}
-.brand{text-decoration:none;color:inherit;font-size:2rem;font-weight:600;letter-spacing:-.05em}
-nav a{text-decoration:none;color:#6b6b66;margin-left:18px;text-transform:uppercase;font-size:.82rem}
-.hero{padding:90px 0;border-bottom:1px solid var(--line)}
-h1{font-size:clamp(4rem,10vw,8rem);margin:0;letter-spacing:-.07em}
-.lead{max-width:720px;color:var(--muted);font-size:1.2rem;line-height:1.7}
-.phase{display:grid;grid-template-columns:220px 1fr;gap:60px;padding:70px 0;border-bottom:1px solid var(--line)}
-.k{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem}
-h2{margin:0 0 20px;font-size:clamp(2rem,4vw,3.8rem);letter-spacing:-.05em}
-ul{margin:0;padding-left:20px}
-li{margin:10px 0}
-footer{padding:24px 0;color:var(--muted);display:flex;justify-content:space-between}
-@media(max-width:800px){.phase{grid-template-columns:1fr;gap:24px}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="See what hagon has built, what is being developed, and what comes next."
+  />
+  <meta name="theme-color" content="#f4f1ea" />
+  <title>Roadmap - hagon</title>
+  <link rel="stylesheet" href="site.css" />
 </head>
-<body>
-<div class="page"><div class="wrap">
-<header class="top">
-<a class="brand" href="index.html">hagon</a>
-<nav>
-<a href="index.html">Home</a>
-<a href="product.html">Product</a>
-<a href="vision.html">Vision</a>
-<a href="roadmap.html" aria-current="page">Roadmap</a>
-</nav>
-</header>
+<body class="roadmap-page">
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="hagon home">
+        <span>hagon</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-ghost" aria-hidden="true">hagon</span>
+      </a>
 
-<section class="hero">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="vision.html">Vision</a>
+        <a href="roadmap.html" aria-current="page">Roadmap</a>
+      </nav>
+    </header>
+
+<main class="content">
+      <section class="hero">
 <p class="k">Roadmap</p>
 <h1>Build with purpose.</h1>
 <p class="lead">
@@ -44,7 +38,7 @@ Built one capability at a time.
 </p>
 </section>
 
-<section class="phase">
+      <section class="phase">
 <div class="k">Available</div>
 <div>
 <h2>Alpha Foundation</h2>
@@ -60,7 +54,7 @@ Built one capability at a time.
 </div>
 </section>
 
-<section class="phase">
+      <section class="phase">
 <div class="k">Current Focus</div>
 <div>
 <h2>Validation</h2>
@@ -73,7 +67,7 @@ Built one capability at a time.
 </div>
 </section>
 
-<section class="phase">
+      <section class="phase">
 <div class="k">Next</div>
 <div>
 <h2>Operational Intelligence</h2>
@@ -87,7 +81,7 @@ Built one capability at a time.
 </div>
 </section>
 
-<section class="phase">
+      <section class="phase">
 <div class="k">Long Term</div>
 <div>
 <h2>Exposure Operations Platform</h2>
@@ -98,12 +92,10 @@ evidence rather than assumptions.
 </p>
 </div>
 </section>
-
-<footer>
-<span>© 2026 hagon</span>
-<a href="vision.html">Vision</a>
-</footer>
-
-</div></div>
+    </main><footer class="footer">
+      <span>© 2026 hagon</span>
+      <a href="index.html">Back Home →</a>
+    </footer>
+  </div>
 </body>
 </html>

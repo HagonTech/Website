@@ -1135,3 +1135,214 @@ body.how-it-works-page .nav a[aria-current="page"] {color: var(--text);}
   body.how-it-works-page .brand-divider,
   body.how-it-works-page .brand-ghost {display: none;}
 }
+
+
+/* Canonical shared shell. Kept last so it overrides all page-specific copies. */
+body.home-page,
+body.product-page,
+body.how-it-works-page,
+body.vision-page,
+body.roadmap-page {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255,255,255,0.9), transparent 28%),
+    linear-gradient(180deg, #f7f4ed 0%, var(--bg) 100%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+body.home-page .page,
+body.product-page .page,
+body.how-it-works-page .page,
+body.vision-page .page,
+body.roadmap-page .page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+body.home-page .topbar,
+body.product-page .topbar,
+body.how-it-works-page .topbar,
+body.vision-page .topbar,
+body.roadmap-page .topbar {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 8px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+body.home-page .brand,
+body.product-page .brand,
+body.how-it-works-page .brand,
+body.vision-page .brand,
+body.roadmap-page .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: inherit;
+  text-decoration: none;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+body.home-page .brand-divider,
+body.product-page .brand-divider,
+body.how-it-works-page .brand-divider,
+body.vision-page .brand-divider,
+body.roadmap-page .brand-divider {
+  width: 1px;
+  height: 34px;
+  flex: 0 0 auto;
+  background: var(--line-strong);
+}
+
+body.home-page .brand-ghost,
+body.product-page .brand-ghost,
+body.how-it-works-page .brand-ghost,
+body.vision-page .brand-ghost,
+body.roadmap-page .brand-ghost {
+  display: inline-block;
+  opacity: 0.035;
+  transform: scaleX(-1);
+  transform-origin: center;
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+body.home-page .nav,
+body.product-page .nav,
+body.how-it-works-page .nav,
+body.vision-page .nav,
+body.roadmap-page .nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+body.home-page .nav a,
+body.product-page .nav a,
+body.how-it-works-page .nav a,
+body.vision-page .nav a,
+body.roadmap-page .nav a {
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  text-decoration: none;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+body.home-page .nav a:hover,
+body.home-page .nav a:focus-visible,
+body.home-page .nav a[aria-current="page"],
+body.product-page .nav a:hover,
+body.product-page .nav a:focus-visible,
+body.product-page .nav a[aria-current="page"],
+body.how-it-works-page .nav a:hover,
+body.how-it-works-page .nav a:focus-visible,
+body.how-it-works-page .nav a[aria-current="page"],
+body.vision-page .nav a:hover,
+body.vision-page .nav a:focus-visible,
+body.vision-page .nav a[aria-current="page"],
+body.roadmap-page .nav a:hover,
+body.roadmap-page .nav a:focus-visible,
+body.roadmap-page .nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+body.product-page .content,
+body.how-it-works-page .content,
+body.vision-page .content,
+body.roadmap-page .content,
+body.home-page .hero-wrap,
+body.home-page .footer,
+body.product-page .footer,
+body.how-it-works-page .footer,
+body.vision-page .footer,
+body.roadmap-page .footer {
+  width: min(1180px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.home-page .footer,
+body.product-page .footer,
+body.how-it-works-page .footer,
+body.vision-page .footer,
+body.roadmap-page .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 820px) {
+  body.home-page .page,
+  body.product-page .page,
+  body.how-it-works-page .page,
+  body.vision-page .page,
+  body.roadmap-page .page { padding: 18px; }
+
+  body.home-page .topbar,
+  body.product-page .topbar,
+  body.how-it-works-page .topbar,
+  body.vision-page .topbar,
+  body.roadmap-page .topbar { align-items: flex-start; }
+
+  body.home-page .nav,
+  body.product-page .nav,
+  body.how-it-works-page .nav,
+  body.vision-page .nav,
+  body.roadmap-page .nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 12px;
+    font-size: 0.74rem;
+  }
+
+  body.home-page .footer,
+  body.product-page .footer,
+  body.how-it-works-page .footer,
+  body.vision-page .footer,
+  body.roadmap-page .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  body.home-page .brand-divider,
+  body.home-page .brand-ghost,
+  body.product-page .brand-divider,
+  body.product-page .brand-ghost,
+  body.how-it-works-page .brand-divider,
+  body.how-it-works-page .brand-ghost,
+  body.vision-page .brand-divider,
+  body.vision-page .brand-ghost,
+  body.roadmap-page .brand-divider,
+  body.roadmap-page .brand-ghost { display: none; }
+}
