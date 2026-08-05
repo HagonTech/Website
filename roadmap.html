@@ -3,32 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Roadmap - hagon</title>
-  <link rel="stylesheet" href="site.css" />
+<title>Roadmap — hagon</title>
+<style>
+:root{--bg:#f4f1ea;--text:#171717;--muted:#6b6b66;--line:rgba(23,23,23,.18);--max:1180px}
+body{margin:0;background:linear-gradient(#f7f4ed,var(--bg));color:var(--text);font-family:Inter,system-ui,sans-serif}
+.page{padding:24px}
+.wrap{width:min(var(--max),100%);margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;padding:8px 0 24px}
+.brand{text-decoration:none;color:inherit;font-size:2rem;font-weight:600;letter-spacing:-.05em}
+nav a{text-decoration:none;color:#6b6b66;margin-left:18px;text-transform:uppercase;font-size:.82rem}
+.hero{padding:90px 0;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(4rem,10vw,8rem);margin:0;letter-spacing:-.07em}
+.lead{max-width:720px;color:var(--muted);font-size:1.2rem;line-height:1.7}
+.phase{display:grid;grid-template-columns:220px 1fr;gap:60px;padding:70px 0;border-bottom:1px solid var(--line)}
+.k{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem}
+h2{margin:0 0 20px;font-size:clamp(2rem,4vw,3.8rem);letter-spacing:-.05em}
+ul{margin:0;padding-left:20px}
+li{margin:10px 0}
+footer{padding:24px 0;color:var(--muted);display:flex;justify-content:space-between}
+@media(max-width:800px){.phase{grid-template-columns:1fr;gap:24px}}
+</style>
 </head>
-<body class="roadmap-page">
+<body>
 <div class="page"><div class="wrap">
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="hagon home">
-        <span>hagon</span>
-        <span class="brand-divider" aria-hidden="true"></span>
-        <span class="brand-ghost" aria-hidden="true">hagon</span>
-      </a>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="vision.html">Vision</a>
-        <a href="roadmap.html" aria-current="page">Roadmap</a>
-      </nav>
-    </header>
+<header class="top">
+<a class="brand" href="index.html">hagon</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="product.html">Product</a>
+<a href="vision.html">Vision</a>
+<a href="roadmap.html" aria-current="page">Roadmap</a>
+</nav>
+</header>
 
 <section class="hero">
-<div class="status">Living Roadmap</div>
-<h1>Roadmap</h1>
+<p class="k">Roadmap</p>
+<h1>Build with purpose.</h1>
 <p class="lead">
-This roadmap tracks capability, not dates. Work moves when it is ready.
+Built one capability at a time.
 </p>
 </section>
 
@@ -53,7 +65,7 @@ This roadmap tracks capability, not dates. Work moves when it is ready.
 <div>
 <h2>Validation</h2>
 <ul>
-<li>Deterministic Validation rules</li>
+<li>Deterministic validation rules</li>
 <li>Evidence-backed Findings</li>
 <li>Score driven only by validated Findings</li>
 <li>Operational workflows</li>
@@ -67,7 +79,7 @@ This roadmap tracks capability, not dates. Work moves when it is ready.
 <h2>Operational Intelligence</h2>
 <ul>
 <li>Domain ownership verification</li>
-<li>Active Validation</li>
+<li>Active validation</li>
 <li>Additional intelligence providers</li>
 <li>Remediation experience</li>
 <li>Notifications</li>
@@ -80,15 +92,17 @@ This roadmap tracks capability, not dates. Work moves when it is ready.
 <div>
 <h2>Exposure Operations Platform</h2>
 <p class="lead">
-A complete exposure operations platform built around evidence, ownership, history, and clear action.
+A complete operational platform where Recon, Validation, Findings,
+Remediation, Ownership, History, and Score work together through
+evidence rather than assumptions.
 </p>
 </div>
 </section>
 
-<footer class="footer">
-      <span>© 2026 hagon</span>
-      <a href="index.html">Back Home →</a>
-    </footer>
+<footer>
+<span>© 2026 hagon</span>
+<a href="vision.html">Vision</a>
+</footer>
 
 </div></div>
 </body>
