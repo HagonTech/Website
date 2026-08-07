@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How security boundaries are being designed into Hagon." />
+  <meta name="theme-color" content="#f4f1ea" />
+  <title>Security - hagon</title>
+  <link rel="stylesheet" href="site.css" />
+  <script defer src="site.js"></script>
+</head>
+<body class="security-page">
+<div class="page">
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="hagon home">
+    <span>hagon</span><span class="brand-divider" aria-hidden="true"></span><span class="brand-ghost" aria-hidden="true">hagon</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+  <nav class="nav" id="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a>
+<a href="product.html">Product</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="pricing.html">Pricing</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a></nav>
+</header>
+<main class="content" id="main-content">
+<section class="hero"><p class="eyebrow">Security</p><h1>Security is an authority problem.</h1><p class="lead">Hagon is being designed so that tenant boundaries, target authorization, identity, ownership, lifecycle, and history are enforced as product authorities, not just interface conventions.</p></section>
+<section class="security-grid"><article><h2>Tenant isolation</h2><p>Customer-owned records are tenant-scoped, with PostgreSQL row-level security used where applicable.</p></article><article><h2>Authorized targets</h2><p>Recon operates only on enabled targets inside an enabled external scope backed by active authorization.</p></article><article><h2>Evidence boundaries</h2><p>Recon observations remain separate from Findings and Score until Validation establishes a supported conclusion.</p></article><article><h2>Least privilege</h2><p>Runtime roles are intended to receive only the permissions needed for supported application paths.</p></article><article><h2>Immutable history</h2><p>Lifecycle, ownership, remediation, delivery, and Score histories are designed to preserve an accountable record.</p></article><article><h2>Responsible disclosure</h2><p>A public vulnerability-reporting channel will be published before general availability.</p></article></section>
+<section class="quiet-panel callout"><strong>Private alpha notice</strong><p>Public security documentation, compliance claims, and vulnerability-reporting contact details are not yet finalized.</p></section></main>
+<footer class="footer">
+  <div><span>© 2026 hagon</span><span class="footer-tagline">Know what matters.</span></div>
+  <nav class="footer-nav" aria-label="Footer navigation"><a href="vision.html">Vision</a>
+<a href="roadmap.html">Roadmap</a>
+<a href="security.html">Security</a>
+<a href="privacy.html">Privacy</a></nav>
+</footer>
+</div>
+</body>
+</html>
