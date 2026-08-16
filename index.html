@@ -3,38 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Hagon is a Recon-first Exposure Operations Platform that discovers external exposure, validates what matters, and helps organizations act." />
+  <meta name="description" content="Hagon helps lean IT and security teams discover external exposure, prioritize what matters, safely validate real risk, and verify remediation." />
   <meta name="theme-color" content="#f4f1ea" />
-  <title>Hagon</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hagon" />
+  <meta property="og:title" content="Hagon — Know what matters." />
+  <meta property="og:description" content="Hagon helps lean IT and security teams discover external exposure, prioritize what matters, safely validate real risk, and verify remediation." />
+  <meta property="og:url" content="https://hagontech.com/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://hagontech.com/" />
+  <title>Hagon — Know what matters.</title>
   <link rel="stylesheet" href="site.css" />
   <script defer src="site.js"></script>
 </head>
 <body class="home-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="page">
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="Hagon home">
-    <span>hagon</span><span class="brand-divider" aria-hidden="true"></span><span class="brand-ghost" aria-hidden="true">hagon</span>
-  </a>
+  <a class="brand" href="index.html" aria-label="Hagon home"><span>hagon</span><span class="brand-divider" aria-hidden="true"></span><span class="brand-ghost" aria-hidden="true">hagon</span></a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-  <nav class="nav" id="primary-nav" aria-label="Primary navigation"><a href="index.html" aria-current="page">Home</a>
-<a href="product.html">Product</a>
+  <nav class="nav" id="primary-nav" aria-label="Primary navigation"><a href="product.html">Product</a>
 <a href="how-it-works.html">How It Works</a>
+<a href="security.html">Trust & Safety</a>
 <a href="pricing.html">Pricing</a>
 <a href="about.html">About</a>
-<a href="contact.html">Contact</a></nav>
+<a href="contact.html" class="nav-cta">Request Access</a></nav>
 </header>
 <main class="content" id="main-content">
-<section class="hero"><p class="eyebrow">External exposure, explained</p><h1>Know<br>what<br>matters.</h1><p class="lead">See what the Internet can already learn about your organization. Hagon turns public exposure into evidence, validates what is real, and keeps the work moving through remediation and verification.</p><p class="status">Private beta</p></section>
-<section class="statement"><p>Recon shows what is exposed. Validation determines what is real. <em>Only validated Findings affect Score.</em></p><p><a href="how-it-works.html">See how it works →</a></p></section>
-<section class="principles"><article><h2>See the outside first.</h2><p>Hagon begins with passive Recon to build an outside-in view from domains, public infrastructure, certificates, email security, technologies, provider relationships, and other observable signals.</p></article><article><h2>Prove before concluding.</h2><p>Observations and vulnerability matches are not Findings. Hagon separates discovery from Validation so suspected exposure does not become risk simply because a scanner or feed reported it.</p></article><article><h2>Understand the attacker’s view.</h2><p>Hagon turns external observations into plain-language context that explains what a potential attacker can already learn. When a condition can be proven, it moves into Evidence, a Finding, remediation, revalidation, and history.</p></article><article><h2>Stay with the problem.</h2><p>Hagon stays with the problem after discovery. Remediation can be reported, the condition can be revalidated, and Score changes only when validated exposure changes.</p></article></section>
+<section class="hero home-refresh">
+  <p class="eyebrow">External exposure, understood</p>
+  <h1>Know<br>what<br>matters.</h1>
+  <p class="lead">Hagon helps lean IT and security teams discover their external footprint, connect current vulnerability intelligence to what is exposed, safely validate real risk, and verify that fixes worked.</p>
+  <div class="hero-actions"><a class="button primary" href="contact.html">Request private-beta access</a><a class="button secondary" href="how-it-works.html">See how Hagon works</a></div>
+  <p class="status">Private beta</p>
+</section>
+<section class="question-grid" aria-labelledby="questions-heading"><div class="section-heading"><p class="eyebrow">The questions Hagon is built to answer</p><h2 id="questions-heading">From visibility to verified improvement.</h2></div><div class="question-cards">
+<article><span>01</span><h3>What can an attacker see?</h3><p>Build an outside-in view of domains, services, technologies, certificates, email posture, providers, and other publicly observable signals.</p></article>
+<article><span>02</span><h3>What actually matters?</h3><p>Connect exposure to current vulnerability and exploitation intelligence without turning every match into an alarm.</p></article>
+<article><span>03</span><h3>Can Hagon safely prove it?</h3><p>Keep discovery separate from active assessment, require explicit authorization, and validate conditions with bounded evidence.</p></article>
+<article><span>04</span><h3>What should I fix first?</h3><p>Separate technical severity from action priority so attention goes to the work that deserves it now.</p></article>
+<article><span>05</span><h3>Did the fix work?</h3><p>Revalidate the condition and resolve a finding only when trusted evidence supports the change.</p></article>
+<article><span>06</span><h3>How is exposure changing?</h3><p>Preserve baselines and history so teams can see what changed, what remains, and whether posture is improving.</p></article>
+</div></section>
+<section class="flow-section"><p class="eyebrow">The Hagon lifecycle</p><div class="flow-line large-flow"><span>Discover</span><span>Review</span><span>Validate</span><span>Prioritize</span><span>Remediate</span><span>Verify</span><span>Monitor</span></div><p class="flow-copy">Discovery starts with what is already public. Active assessment begins only after customer review and explicit authorization. Findings require evidence. Remediation ends with verification.</p></section>
+<section class="feature-section"><div class="feature-copy"><p class="eyebrow">Intelligence with context</p><h2>New vulnerability does not automatically mean new risk.</h2><p>Hagon connects current vulnerability and known-exploitation intelligence to technologies observed in your external footprint. A relevant match remains a candidate until evidence supports a finding.</p></div><div class="feature-panel"><p class="panel-label">Noise boundary</p><strong>Candidate ≠ finding</strong><p>Intelligence helps decide where attention and validation are warranted. It does not lower score by itself.</p></div></section>
+<section class="feature-section"><div class="feature-copy"><p class="eyebrow">Score & priority</p><h2>One number for validated external exposure. One priority for what to do next.</h2><p>Hagon's 0–100 score reflects current validated external exposure. Observations and intelligence matches do not lower it. Severity describes technical seriousness; action priority explains what deserves attention first.</p><p>A score of 100 means Hagon has no current validated deductions. It is not proof that every possible risk has been assessed.</p></div><div class="score-card" aria-label="Hagon score explanation"><span class="score-value">100</span><span class="score-label">No current validated deductions</span><span class="score-note">Evidence changes the score. Noise does not.</span></div></section>
+<section class="principles"><article><h2>Visibility without automatic testing</h2><p>Passive recon can show what is public before Hagon receives permission to interact with customer infrastructure.</p></article><article><h2>Evidence-backed findings</h2><p>Hagon preserves uncertainty and separates observations, candidates, validation evidence, findings, and score.</p></article><article><h2>Plain-language remediation</h2><p>Understand what is wrong, why it matters, what to change, what the change could affect, and how Hagon will verify it.</p></article><article><h2>Continuous operations</h2><p>See meaningful change, new intelligence, remediation progress, and verified posture improvement without living in scanner output.</p></article></section>
+<section class="trust-strip"><p class="eyebrow">Built for responsible operation</p><div class="proof-grid"><article><strong>Explicit authorization</strong><span>Discovery never grants permission to actively assess infrastructure.</span></article><article><strong>Bounded validation</strong><span>Least-intrusive checks with clear safety limits.</span></article><article><strong>Organization-level isolation</strong><span>Customer data and operational records remain separated by organization.</span></article><article><strong>Tested recovery discipline</strong><span>Operational and recovery procedures are verified rather than assumed.</span></article></div></section>
+<section class="cta-band"><p class="eyebrow">Private beta</p><h2>See your external exposure with less noise and more proof.</h2><p>Hagon is working with lean teams that want a clearer path from discovery to verified remediation.</p><div class="hero-actions"><a class="button primary" href="contact.html">Request access</a><a class="button secondary" href="product.html">Explore the product</a></div></section>
 </main>
-<footer class="footer">
-  <div><span>© 2026 Hagon</span><span class="footer-tagline">Know what matters.</span></div>
-  <nav class="footer-nav" aria-label="Footer navigation"><a href="vision.html">Vision</a>
-<a href="roadmap.html">Roadmap</a>
-<a href="security.html">Security</a>
-<a href="privacy.html">Privacy</a></nav>
-</footer>
+<footer class="footer"><div><span>© 2026 Hagon</span><span class="footer-tagline">Know what matters.</span></div><nav class="footer-nav" aria-label="Footer navigation"><a href="product.html">Product</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="security.html">Trust & Safety</a>
+<a href="pricing.html">Pricing</a>
+<a href="privacy.html">Privacy</a></nav></footer>
 </div>
 </body>
 </html>

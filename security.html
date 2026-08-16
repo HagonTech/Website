@@ -3,37 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="How Hagon approaches tenant isolation, explicit authorization, evidence boundaries, safe validation, data minimization, and accountable security operations." />
+  <meta name="description" content="How Hagon approaches explicit authorization, bounded validation, evidence boundaries, organization-level isolation, data minimization, and operational discipline." />
   <meta name="theme-color" content="#f4f1ea" />
-  <title>Security - Hagon</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hagon" />
+  <meta property="og:title" content="Trust &amp; Safety — Hagon" />
+  <meta property="og:description" content="How Hagon approaches explicit authorization, bounded validation, evidence boundaries, organization-level isolation, data minimization, and operational discipline." />
+  <meta property="og:url" content="https://hagontech.com/security.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://hagontech.com/security.html" />
+  <title>Trust &amp; Safety — Hagon</title>
   <link rel="stylesheet" href="site.css" />
   <script defer src="site.js"></script>
 </head>
 <body class="security-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="page">
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="Hagon home">
-    <span>hagon</span><span class="brand-divider" aria-hidden="true"></span><span class="brand-ghost" aria-hidden="true">hagon</span>
-  </a>
+  <a class="brand" href="index.html" aria-label="Hagon home"><span>hagon</span><span class="brand-divider" aria-hidden="true"></span><span class="brand-ghost" aria-hidden="true">hagon</span></a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-  <nav class="nav" id="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a>
-<a href="product.html">Product</a>
+  <nav class="nav" id="primary-nav" aria-label="Primary navigation"><a href="product.html">Product</a>
 <a href="how-it-works.html">How It Works</a>
+<a href="security.html" aria-current="page">Trust & Safety</a>
 <a href="pricing.html">Pricing</a>
 <a href="about.html">About</a>
-<a href="contact.html">Contact</a></nav>
+<a href="contact.html" class="nav-cta">Request Access</a></nav>
 </header>
 <main class="content" id="main-content">
-<section class="hero"><p class="eyebrow">Security</p><h1>Trust starts with limits.</h1><p class="lead">Hagon is designed so customers can see what they authorized, what Hagon did, what evidence supports a conclusion, and where the product deliberately stops.</p></section>
-<section class="principles"><article><h2>Authenticated customer access</h2><p>Customer activity is tied to authenticated identity and explicit organization membership. Authentication establishes who is acting; it does not itself grant infrastructure-testing authority or bypass tenant isolation.</p></article><article><h2>Tenant isolation</h2><p>Customer-owned records are tenant-scoped, with PostgreSQL row-level security used where applicable.</p></article><article><h2>Passive before active</h2><p>Passive Recon uses external information without requiring active-testing authority. Direct interaction with customer infrastructure is a separate capability and requires explicit authorization.</p></article><article><h2>Explicit authorization</h2><p>Domain control, asset attribution, public network scope, and active-testing authority are separate concepts. Discovery never grants permission to scan. Exact hostname authorization permits only bounded interaction with that logical service; it does not grant general authority over the provider IP that serves it.</p></article><article><h2>Evidence boundaries</h2><p>Recon observations, candidate exposures, and vulnerability matches remain separate from Findings and Score until Validation supports a conclusion.</p></article><article><h2>Bounded validation</h2><p>Hagon uses least-intrusive, non-destructive active testing and Validation with centrally enforced safety limits. Scanner engines are subordinate to Hagon authorization and safety controls. Standard operation does not include denial-of-service testing, brute force, persistence, destructive exploitation, or lateral movement.</p></article><article><h2>Data minimization</h2><p>Hagon collects the evidence needed to establish a condition, not unnecessary customer data. Raw scanner and website artifacts are bounded and minimized, while durable normalized security history is retained when it is needed to explain what happened.</p></article><article><h2>Accountable history</h2><p>Authorization, lifecycle, ownership, remediation, delivery, and Score histories are designed to preserve an explainable record.</p></article><article><h2>Responsible disclosure</h2><p>A public vulnerability-reporting channel and security contact will be published before general availability.</p></article></section>
-<section class="beta-notice" aria-label="Private beta notice"><p class="eyebrow">Private beta</p><h2>Security documentation is still evolving.</h2><p>This page distinguishes current controls from clearly identified product direction. Public compliance claims and final security documentation are not yet published.</p></section></main>
-<footer class="footer">
-  <div><span>© 2026 Hagon</span><span class="footer-tagline">Know what matters.</span></div>
-  <nav class="footer-nav" aria-label="Footer navigation"><a href="vision.html">Vision</a>
-<a href="roadmap.html">Roadmap</a>
-<a href="security.html">Security</a>
-<a href="privacy.html">Privacy</a></nav>
-</footer>
+<section class="hero"><p class="eyebrow">Trust & Safety</p><h1>Trust starts with limits.</h1><p class="lead">Hagon is designed so customers can understand what was discovered, what they authorized, what Hagon did, what evidence supports a conclusion, and where the product deliberately stops.</p></section>
+<section class="principles"><article><h2>Authenticated access</h2><p>Customer activity is tied to authenticated identity and organization membership. Authentication establishes who is acting; it does not grant infrastructure-testing authority.</p></article><article><h2>Organization-level isolation</h2><p>Customer data and operational records are separated by organization and protected by enforced access boundaries.</p></article><article><h2>Passive before active</h2><p>Hagon can show what is publicly visible before receiving permission to directly assess customer infrastructure.</p></article><article><h2>Explicit authorization</h2><p>Discovery, control verification, asset review, and active-assessment authority are separate. Customers explicitly choose the networks and verified services Hagon may assess.</p></article><article><h2>Evidence boundaries</h2><p>Observations, technology matches, vulnerability candidates, validation evidence, findings, and score remain distinct. A match is not automatically a finding.</p></article><article><h2>Bounded validation</h2><p>Standard operation uses least-intrusive, non-destructive checks with centrally enforced safety limits. It does not include denial-of-service testing, brute force, persistence, destructive exploitation, or lateral movement.</p></article><article><h2>Data minimization</h2><p>Hagon collects the evidence needed to establish and explain security conditions while minimizing unnecessary raw artifacts and sensitive content.</p></article><article><h2>Traceable history</h2><p>Authorization, evidence, findings, ownership, remediation, revalidation, and score changes are designed to remain explainable over time.</p></article><article><h2>Operational discipline</h2><p>Deployment, backup, recovery, and verification procedures are tested rather than assumed. Hagon does not publish unsupported uptime, compliance, or breach-prevention claims.</p></article><article><h2>Responsible disclosure</h2><p>A public security contact and vulnerability-reporting channel will be published before broader availability.</p></article></section>
+<section class="beta-notice"><p class="eyebrow">Private beta</p><h2>Trust documentation will continue to mature.</h2><p>Hagon is still in private beta. Formal compliance claims, SLAs, and final security documentation are not yet published.</p></section>
+<section class="cta-band"><h2>Assessment boundaries should be clear before testing begins.</h2><div class="hero-actions"><a class="button primary" href="contact.html">Discuss private-beta access</a><a class="button secondary" href="how-it-works.html">See the lifecycle</a></div></section>
+</main>
+<footer class="footer"><div><span>© 2026 Hagon</span><span class="footer-tagline">Know what matters.</span></div><nav class="footer-nav" aria-label="Footer navigation"><a href="product.html">Product</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="security.html">Trust & Safety</a>
+<a href="pricing.html">Pricing</a>
+<a href="privacy.html">Privacy</a></nav></footer>
 </div>
 </body>
 </html>
