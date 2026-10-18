@@ -143,8 +143,8 @@ body{
     linear-gradient(180deg,#f8f5ef 0%,var(--bg) 48%,#f1f4f2 100%);
   background-attachment:fixed;
 }
-.icon-mark{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(50,119,134,.25);background:rgba(225,244,247,.48);border-radius:12px;color:#245f6c;flex:0 0 auto}
-.icon-mark svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.icon-mark{width:40px;height:40px;display:inline-grid;place-items:center;border:1px solid rgba(50,119,134,.25);background:rgba(225,244,247,.48);border-radius:12px;color:#245f6c;flex:0 0 auto;line-height:0}
+.icon-mark svg{display:block;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .compact-heading{margin-bottom:28px}
 .stat-grid,.labor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .stat-grid article,.labor-grid article{padding:clamp(24px,3vw,34px);background:rgba(255,255,255,.42)}
@@ -154,7 +154,6 @@ body{
 .source-note a{text-underline-offset:3px}
 .labor-section{padding:70px 0;border-top:1px solid var(--line)}
 .question-cards article{position:relative}
-.question-cards .question-number{margin-bottom:16px}
 .question-icon{margin-bottom:22px}
 
 @media(max-width:900px){.stat-grid,.labor-grid{grid-template-columns:1fr}}
