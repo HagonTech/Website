@@ -156,10 +156,6 @@ body{
 .question-cards article{position:relative}
 .question-cards .question-number{margin-bottom:16px}
 .question-icon{margin-bottom:22px}
-.founding-offer{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:24px;align-items:center;margin:0 0 64px;padding:clamp(24px,3.5vw,38px);border:1px solid var(--line-strong);background:linear-gradient(135deg,rgba(255,255,255,.62),rgba(225,244,247,.34))}
-.founding-offer .eyebrow{margin-bottom:10px}
-.founding-offer h2{margin:0;font-size:clamp(1.8rem,3.2vw,3.1rem);line-height:1.06;letter-spacing:-.045em;font-weight:550}
-.founding-offer p:not(.eyebrow){max-width:760px;margin:14px 0 0;color:var(--muted);line-height:1.65}
-.founding-offer .button{white-space:nowrap}
-@media(max-width:900px){.stat-grid,.labor-grid{grid-template-columns:1fr}.founding-offer{grid-template-columns:auto 1fr}.founding-offer .button{grid-column:1 / -1;justify-self:start}}
-@media(max-width:600px){.founding-offer{grid-template-columns:1fr}.founding-offer .button{justify-self:stretch}.stat-grid strong,.labor-grid strong{font-size:2.4rem}}
+
+@media(max-width:900px){.stat-grid,.labor-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.stat-grid strong,.labor-grid strong{font-size:2.4rem}}
